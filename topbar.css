@@ -1,0 +1,151 @@
+html {
+  --projNumWidth: 45px;
+  --maxContentWidth: calc(100% - (2 * var(--projNumWidth)));
+  /* font-size: 22px;
+  line-height: 24px; */
+}
+.box {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+a:visited {
+  color: blue;
+}
+
+.preview {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  flex: 1; 
+  min-height: 0;
+  overflow: hidden;
+}
+
+.preview img {
+  height: 100%;
+  width: 70%;
+  object-fit:fill;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.headbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 0px;
+}
+
+h1 {
+  font-size: 25;
+  font-weight: normal;
+}
+
+.pfp:hover {
+  box-shadow: 0 0 10px 4px blue;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 20px;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.medium {
+  width: 140px;
+}
+
+.title {
+  width: 300px;
+}
+
+.year {
+  width: 60px;
+}
+
+#g2 {
+  height: 200px;
+}
+
+.layout {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.projectLabelContainer {
+    width: calc(100% - var(--projNumWidth));
+}
+
+.projectDescription {
+  padding-top: 30px;
+}
+
+.projectLabel {
+    margin-right: 20px;
+    display: inline;
+    font-size: 20px;
+}
+
+p {
+    display: block;
+    margin: auto;
+    width: 60%;
+    text-align: justify;
+}
+
+div.scroll-container {
+  overflow:auto;
+  white-space: nowrap;
+  display: block;
+  margin: auto;
+  width: 60%;
+  
+}
+
+div.scroll-container img {
+  padding: 10px;
+  height: 600px;
+  vertical-align: top;
+}
+
+#close {
+    float: left;
+    padding-bottom: 1px;
+    padding-right: 20px;
+    text-decoration: none;
+    box-sizing: content-box;
+    border-bottom: none;
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  bottom:0;
+  align-items: stretch;
+  align-content: flex-end;
+  gap: 0px;
+}

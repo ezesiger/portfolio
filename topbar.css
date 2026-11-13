@@ -4,6 +4,15 @@ html {
   /* font-size: 22px;
   line-height: 24px; */
 }
+
+img, video {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100dvh; /* dvh accounts for mobile browser address bars, unlike vh */
+}
+
 .box {
   border: 2px solid black;
   padding: 5px;
@@ -159,4 +168,67 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   gap: 0px;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 18px;
+  }
+  .headbar {
+    align-items: center;
+    gap: 8px;
+  }
+  .headbar img {
+    width: 70px;
+  }
+
+  .item,
+  .item:hover {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+  .medium,
+  .title,
+  .year {
+    width: auto;
+  }
+  .title {
+    flex: 1;
+  }
+  .preview {
+    flex: 1 1 100%;
+    height: 25px;
+  }
+  .preview img {
+    width: 100%;
+  }
+
+  .projectLabelContainer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .projectLabel {
+    font-size: 18px;
+  }
+  p,
+  div.scroll-container {
+    width: 92%;
+  }
+  div.scroll-container img,
+  div.scroll-container video {
+    height: 300px;
+    max-width: none; /* keeps horizontal scrolling working */
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .footer {
+    font-size: 14px;
+    gap: 8px;
+  }
 }
